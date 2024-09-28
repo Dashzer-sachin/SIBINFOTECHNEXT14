@@ -2,16 +2,31 @@ import React from 'react';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
 import Head from 'next/head';
+import { CustomLayout } from '@/comps/CustomLayout';
 
 export default function PressReleaseSubmissionServices() {
-  return (
-    <div>
-        <Head>
-            <title>Press Release Submission Services Companies Mumbai London India SIB Infotech</title>
-            <meta name="keywords" content=""/>
-            <meta name="description" content="SIB Infotech's Press release service will post the press releases for you regarding your business and then allocate them to the various media channels. We offer Press Release Writing And Distribution service for High traffic an High Search Engine Visibillity."/>
-            {/* <link rel="canonical" href="https://www.sibinfotech.com/press-release-submission-services"/> */}
-        </Head>
+    const metaTags = (
+        <>
+          <title>Title</title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+         
+    
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="/" />
+          <meta property="og:title" content="" />
+          <meta property="og:description" content="" />
+          <meta property="og:image" content="" />
+    
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="/" />
+          <meta property="twitter:title" content="" />
+          <meta property="twitter:description" content="" />
+          <meta property="twitter:image" content="" />
+        </>
+      );
+      return (
+        <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                  <div className="row">
@@ -81,6 +96,6 @@ export default function PressReleaseSubmissionServices() {
                 </div>
             </div>
         </section>
-    </div>
+    </CustomLayout>
   )
 }

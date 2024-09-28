@@ -1,16 +1,30 @@
-import React from 'react';
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function WebApplicationTestingMumbaiIndia() {
+  const metaTags = (
+    <>
+      <title>Title</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+     
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="/" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="/" />
+      <meta property="twitter:title" content="" />
+      <meta property="twitter:description" content="" />
+      <meta property="twitter:image" content="" />
+    </>
+  );
   return (
-    <div>
-        <Head>
-            <title>Web Application Testing Services Company India USA UK London SIB Infotech</title>
-            <meta name="keywords" content="web application testing services,web application testing service,offshore web application testing,web application testing companies,web application testing company,web application testing india,web application testing delhi,web application testing mumbai,"/>
-            <meta name="description" content="Some times we offer Offshore Software testing to our client base. It is about the verification and validation carried out on software product that makes it sure about high end product quality. The test development activities involve test planning and test case scenarios, automation testing and real time manual testing activities."/>
-        </Head>
+    <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                 <div className="row">
@@ -122,6 +136,6 @@ export default function WebApplicationTestingMumbaiIndia() {
               </div>
             </div>
          </section>
-    </div>
+    </CustomLayout>
   )
 }

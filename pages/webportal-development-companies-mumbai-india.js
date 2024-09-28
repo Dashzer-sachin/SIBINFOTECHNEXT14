@@ -1,16 +1,30 @@
-import React from 'react';
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function WebPortalCompanyMumbai() {
-  return (
-    <div>
-        <Head>
-            <title>Portal Development Services Companies Mumbai India London UK SIB Infotech</title>
-            <meta name="keywords" content="web portal development services,web portal development service,offshore web portal development,web portal development companies,web portal development company,web portal development india,web portal development delhi,web portal development mumbai,web port"/>
-            <meta name="description" content="SIB Infotech's portal development services range over portal designing, portal development, offshore portal development, portal maintenance. We design and develop multi-domain web portals which include B2B (Business to Business) portals, B2C (Business to Consumer) portals, e-commerce portals, SharePoint portals, Knowledge Management Portals, Job Portals, Service Portals and more"/><link rel="canonical" href="https://www.sibinfotech.com/webportal-development-companies-mumbai-india"/>
-        </Head>
+    const metaTags = (
+        <>
+          <title>Title</title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+         
+    
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="/" />
+          <meta property="og:title" content="" />
+          <meta property="og:description" content="" />
+          <meta property="og:image" content="" />
+    
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="/" />
+          <meta property="twitter:title" content="" />
+          <meta property="twitter:description" content="" />
+          <meta property="twitter:image" content="" />
+        </>
+      );
+      return (
+        <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                  <div className="row">
@@ -156,6 +170,6 @@ export default function WebPortalCompanyMumbai() {
                 <img className="bgImageEffect" src="assets/images/icons/tab-img-pattern.png" alt="Web-Portal-Development-Agency"/>
             </div>
         </section>
-    </div>
+    </CustomLayout>
   )
 }

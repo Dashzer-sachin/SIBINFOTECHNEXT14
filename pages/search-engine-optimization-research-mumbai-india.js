@@ -2,16 +2,31 @@ import React from 'react';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
 import Head from 'next/head';
+import { CustomLayout } from '@/comps/CustomLayout';
 
 export default function SearchEngineOptimizationResearchMumbaiIndia() {
-  return (
-    <div>
-        <Head>
+  const metaTags = (
+    <>
+      <title>Title</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+     
 
-            <title>SEO Research Solution Service Provider Companies London India UK</title>
-            <meta name="keywords" content="seo research services,seo research services company,regional seo,seo india,seo service india,local search engine optimization,local seo,affordable seo services india,search engine optimization companies,professional seo services,professional seo service,l"/>
-            <meta name="description" content="SIB Infotech is SEO Research SEO Analysis Company India offer in depth SEO Research services of website competitors for search engine ranking on top search engines via Google,Yahoo,MSN."/>
-        </Head>
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="/" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="/" />
+      <meta property="twitter:title" content="" />
+      <meta property="twitter:description" content="" />
+      <meta property="twitter:image" content="" />
+    </>
+  );
+  return (
+    <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                 <div className="row">
@@ -109,6 +124,6 @@ export default function SearchEngineOptimizationResearchMumbaiIndia() {
             </div>
           </div>
         </section>
-    </div>
+    </CustomLayout>
   )
 }

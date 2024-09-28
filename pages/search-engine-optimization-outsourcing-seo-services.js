@@ -3,16 +3,31 @@ import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
 import ProgressSteps from '../comps/ProgressSteps';
 import Head from 'next/head';
+import { CustomLayout } from '@/comps/CustomLayout';
 
 export default function SearchEngineOptimizationOutsourcingSeoServices() {
-  return (
-    <div>
-        <Head>
-            <title>Best SEO Outsourcing Company in India , Outsource White Label SEO Services</title>
-            <meta name="keywords" content="SEO Outsourcing Company, SEO Outsourcing India, SEO Outsourcing Company India, SEO Outsourcing Services, SEO Outsourcing Services India, SEO Reseller Program, Private Label SEO Reseller Programs,  SEO Projects Outsourcing Company India, Outsourcing SEO Pr"/>
-            <meta name="description" content="Outsource SEO service to India with SIB Infotech a 100% White Label SEO outsourcing company in India offering affordable SEO Reseller packages you can offer your clients. Our SEO outsourcing services ensures increase in your clients website  trafiic & ranking."/>
-            {/* <link rel="canonical" href="https://www.sibinfotech.com/search-engine-optimization-outsourcing-seo-services"/> */}
-        </Head>
+    const metaTags = (
+        <>
+          <title>Title</title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+         
+    
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="/" />
+          <meta property="og:title" content="" />
+          <meta property="og:description" content="" />
+          <meta property="og:image" content="" />
+    
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="/" />
+          <meta property="twitter:title" content="" />
+          <meta property="twitter:description" content="" />
+          <meta property="twitter:image" content="" />
+        </>
+      );
+      return (
+        <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                  <div className="row">
@@ -308,6 +323,6 @@ export default function SearchEngineOptimizationOutsourcingSeoServices() {
                 </div>
             </div>
         </section>
-    </div>
+    </CustomLayout>
   )
 }

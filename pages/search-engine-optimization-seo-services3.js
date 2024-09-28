@@ -1,11 +1,8 @@
-import Head from "next/head";
-import Link from "next/link";
-import BannerForm from "../comps/BannerForm";
-import React, { useState, useEffect } from "react";
+import { CustomLayout } from "@/comps/CustomLayout";
+import SEO from "@/comps/SEO/SEO";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image from "next/image";
-import SEO from "@/comps/SEO/SEO";
+import { useEffect, useState } from "react";
 
 export default function SearchEngineOptimizationServices() {
   useEffect(() => {
@@ -21,26 +18,29 @@ export default function SearchEngineOptimizationServices() {
   };
 
 
+  const metaTags = (
+    <>
+      <title>Title</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+     
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="/" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="/" />
+      <meta property="twitter:title" content="" />
+      <meta property="twitter:description" content="" />
+      <meta property="twitter:image" content="" />
+    </>
+  );
   return (
-    <div>
-      <Head>
-        <title>
-          Best SEO Company In India, SEO Services Mumbai, SEO Agency India
-        </title>
-        <meta
-          name="description"
-          content="Are you looking for the best SEO Company in India? SIB Infotech is the best SEO Company in India providing white-label SEO Services in India. With a comprehensive list of seo services."
-        />
-        <meta
-          name="keywords"
-          content="SEO Company in India, SEO Company in Mumbai, SEO Agency India, SEO Agency in India, SEO Agency in Mumbai, seo services, seo services in India, seo services in Mumbai, seo optimization service, India seo company, seo providers in India, search engine optimization companies in India, seo firms India, search engine optimization agencies"
-        />
-        {/* <link
-          rel="canonical"
-          href="https://www.sibinfotech.com/search-engine-optimization-seo-services"
-        /> */}
-      </Head>
+    <CustomLayout meta={metaTags}>
       <SEO />
-    </div>
+    </CustomLayout>
   );
 }

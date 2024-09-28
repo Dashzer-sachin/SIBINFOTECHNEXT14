@@ -2,15 +2,31 @@ import React from 'react';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
 import Head from 'next/head';
+import { CustomLayout } from '@/comps/CustomLayout';
 
 export default function RealEstateWebsiteDevelopmentServices() {
+  const metaTags = (
+    <>
+      <title>Title</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+     
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="/" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="/" />
+      <meta property="twitter:title" content="" />
+      <meta property="twitter:description" content="" />
+      <meta property="twitter:image" content="" />
+    </>
+  );
   return (
-    <div>
-        <Head>
-            <title>Real Estate Website Development Services Company Mumbai UK SIB Infotech</title>
-            <meta name="keywords" content="real estate website developer india,real estate website developer mumbai,real estate website developer delhi,real estate website developer pune,real estate website developer hyderabad,real estate website developer bangalore,real estate website developer c"/>
-            <meta name="description" content="SIB Infotech is a real estate website design company that you can trust. We are proud to serve an international client base with custom real estate website design and marketing solutions that set the industry standard. We are proud to offer professional real estate website designing solutions which offer incredible styles, features, and community options."/>
-        </Head>
+    <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                 <div className="row">
@@ -137,6 +153,6 @@ export default function RealEstateWebsiteDevelopmentServices() {
             </div>
           </div>
         </section>
-    </div>
+    </CustomLayout>
   )
 }

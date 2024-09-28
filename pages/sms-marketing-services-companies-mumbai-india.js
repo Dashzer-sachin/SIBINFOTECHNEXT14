@@ -1,16 +1,30 @@
-import React from 'react';
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function SmsMarketingServciesCompaniesMumbaiIndia() {
-  return (
-    <div>
-        <Head>
-            <title>SMS Marketing Services Companies Mumbai Delhi Pune Nashik India SIB Infotech</title>
-            <meta name="keywords" content="sms marketing solutions,sms marketing solution,sms marketing experts,sms marketing expert,sms marketing seo services,sms marketing firms,sms marketing services,sms marketing companies,sms marketing india,sms marketing delhi,sms marketing mumbai,sms market"/>
-            <meta name="description" content="SIB Infotech is a leading provider of premium SMS and Mobile Marketing Solutions.We provide specialized services in SMS marketing that combine the power of this new technology with our relationship marketing expertise to help you craft new campaigns and services."/>
-        </Head>
+   const metaTags = (
+      <>
+        <title>Title</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+       
+  
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+  
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="/" />
+        <meta property="twitter:title" content="" />
+        <meta property="twitter:description" content="" />
+        <meta property="twitter:image" content="" />
+      </>
+    );
+    return (
+      <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                 <div className="row">
@@ -217,6 +231,6 @@ export default function SmsMarketingServciesCompaniesMumbaiIndia() {
                </div>
             </div>
          </section>
-    </div>
+    </CustomLayout>
   )
 }

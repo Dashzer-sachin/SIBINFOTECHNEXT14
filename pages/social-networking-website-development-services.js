@@ -1,16 +1,30 @@
-import React from 'react';
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function SocialNetworkingDevelopmentServices() {
-  return (
-    <div>
-        <Head>
-            <title>Social Networking Website Development Services Mumbai India SIB Infotech</title>
-            <meta name="keywords" content="social networking website developer india,social networking website developer mumbai,social networking website developer delhi,social networking website developer pune,social networking website developer hyderabad,social networking website developer banga"/>
-            <meta name="description" content="SIB Infotech is a social networking website design company that you can trust. We are proud to serve an international client base with custom social networking website design and marketing solutions that set the industry standard. We are proud to offer professional social networking website designing solutions which offer incredible styles, features, and community options."/>
-        </Head>
+   const metaTags = (
+      <>
+        <title>Title</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+       
+  
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+  
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="/" />
+        <meta property="twitter:title" content="" />
+        <meta property="twitter:description" content="" />
+        <meta property="twitter:image" content="" />
+      </>
+    );
+    return (
+      <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                 <div className="row">
@@ -218,6 +232,6 @@ export default function SocialNetworkingDevelopmentServices() {
             </div>
           </div>
          </section>
-    </div>
+    </CustomLayout>
   )
 }

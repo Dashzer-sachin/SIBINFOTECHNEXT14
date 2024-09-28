@@ -1,17 +1,30 @@
-import React from 'react';
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function WordPressCmsServices() {
-  return (
-    <div>
-        <Head>
-            <title>Wordpress CMS Website Development Services Companies India SIB Infotech</title>
-            <meta name="keywords" content="wordpress cms development services,wordpress cms development service,offshore wordpress cms development,wordpress cms development companies,wordpress cms development company,wordpress cms development india,wordpress cms development delhi,wordpress cms dev"/>
-            <meta name="description" content="SIB Infotech provides Wordpress CMS development services.At SIB Infotech, we can do anything with wordpress whether it is website development, blogging platform, Multi-blogging platform, social network and anything web 2.0."/>
-            {/* <link rel="canonical" href="https://www.sibinfotech.com/wordpress-cms-website-development-companies-mumbai-india"/> */}
-        </Head>
+    const metaTags = (
+        <>
+          <title>Title</title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+         
+    
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="/" />
+          <meta property="og:title" content="" />
+          <meta property="og:description" content="" />
+          <meta property="og:image" content="" />
+    
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="/" />
+          <meta property="twitter:title" content="" />
+          <meta property="twitter:description" content="" />
+          <meta property="twitter:image" content="" />
+        </>
+      );
+      return (
+        <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                  <div className="row">
@@ -167,6 +180,6 @@ export default function WordPressCmsServices() {
                 </div>
             </div>
         </section>
-    </div>
+    </CustomLayout>
   )
 }

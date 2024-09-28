@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import Head from "next/head";
+import { CustomLayout } from "@/comps/CustomLayout";
 import Link from "next/link";
-import BannerForm from "../comps/BannerForm";
+import { useState } from "react";
 import { Accordion } from "react-bootstrap";
+import BannerForm from "../comps/BannerForm";
 
 export default function WebDevelopmentServices() {
   const [isShowMore, setIsShowMore] = useState(false);
@@ -96,18 +96,28 @@ export default function WebDevelopmentServices() {
   const faqsDataLeft = faqsData.slice(0, Math.ceil(faqsData.length / 2));
   const faqsDataRight = faqsData.slice(Math.ceil(faqsData.length / 2));
 
+  const metaTags = (
+    <>
+      <title>Title</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+     
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="/" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="/" />
+      <meta property="twitter:title" content="" />
+      <meta property="twitter:description" content="" />
+      <meta property="twitter:image" content="" />
+    </>
+  );
   return (
-    <div>
-      <Head>
-        <title>
-          Best Web Development Company India, Website Development Agency
-          Services Mumbai
-        </title>
-        {/* <link
-          rel="canonical"
-          href="https://www.sibinfotech.com/website-development-services"
-        /> */}
-      </Head>
+    <CustomLayout meta={metaTags}>
       <div className="innerWebDesign">
         <div className="container-fluid">
           <div className="row">
@@ -1212,6 +1222,6 @@ export default function WebDevelopmentServices() {
           </div>
         </div>
       </section>
-    </div>
+    </CustomLayout>
   );
 }

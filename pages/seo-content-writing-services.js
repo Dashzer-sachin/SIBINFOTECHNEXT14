@@ -1,16 +1,30 @@
 import BannerForm from '@/comps/BannerForm';
-import Head from 'next/head';
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
-import React from 'react';
 
 export default function SeoContentWritingServices() {
-  return (
-        <div>
-            <Head>
-                <title>SEO Content Writing Services Companies England London India UK SIB Infotech</title>
-                <meta name="keywords" content="seo content writing service,seo content writing services,manual seo content writing,manual seo content writing service,seo content writing india,seo content writing delhi,seo content writing mumbai,seo content writing chennai,seo content writing bangalore"/>
-                <meta name="description" content="SIB Infotech provides an attractive and ornamented range of content writing services which are nourished out by our skilled team of content writers who rule over exceptional command on the global language of communication. SIB Infotech has a good bunch of talented and amazing web content writers and are show the way as the best SEO service providers in India."/>
-            </Head>
+    const metaTags = (
+        <>
+          <title>Title</title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+         
+    
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="/" />
+          <meta property="og:title" content="" />
+          <meta property="og:description" content="" />
+          <meta property="og:image" content="" />
+    
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="/" />
+          <meta property="twitter:title" content="" />
+          <meta property="twitter:description" content="" />
+          <meta property="twitter:image" content="" />
+        </>
+      );
+      return (
+        <CustomLayout meta={metaTags}>
             <div className="innerWebDesign">
                 <div className="container-fluid">
                     <div className="row">
@@ -163,6 +177,7 @@ export default function SeoContentWritingServices() {
                 </div>
                 </div>
             </section>
-        </div>
+        </CustomLayout>
+
   )
 }

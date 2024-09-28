@@ -1,17 +1,30 @@
-import React from 'react';
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function WordpressWebsiteDesignDevelopmentServices() {
-  return (
-    <div>
-         <Head>
-            <title>WordPress Website Design & Development Services</title>
-            <meta name="keywords" content="e-commerce web designing,e-commercewebsite designing,e-commerce web designing services,e-commerce website designing services,e-commerce web designing companies,e-commerce website designing companies,e-commerce web designing india,e-commerce web designing "/>
-            <meta name="description" content="SIB Infotech is an eCommerce web design company in India offering professional ecommerce website development and web promotion services in Mumbai. It is the top ecommerce development company in London, UK & USA"/>
-            {/* <link rel="canonical" href="https://www.sibinfotech.com/wordpress-website-design-development-services"/> */}
-        </Head>
+    const metaTags = (
+        <>
+          <title>Title</title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+         
+    
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="/" />
+          <meta property="og:title" content="" />
+          <meta property="og:description" content="" />
+          <meta property="og:image" content="" />
+    
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="/" />
+          <meta property="twitter:title" content="" />
+          <meta property="twitter:description" content="" />
+          <meta property="twitter:image" content="" />
+        </>
+      );
+      return (
+        <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                  <div className="row">
@@ -172,6 +185,6 @@ export default function WordpressWebsiteDesignDevelopmentServices() {
                 <svg id="pattner" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"> <path d="M0,128L48,138.7C96,149,192,171,288,170.7C384,171,480,149,576,133.3C672,117,768,107,864,117.3C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#f02329" fill-opacity="1"></path> </svg>
             </div>
         </section>
-    </div>
+    </CustomLayout>
   )
 }

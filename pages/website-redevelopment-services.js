@@ -1,19 +1,30 @@
-import React from 'react';
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function WebsiteRedevelopmentServices() {
-  return (
-    <div>
-        <Head>
-            <title>Website Redevelopment Services</title>
-            <meta name="keywords" content="Web Design India, Software Development Companies, Web Development Companies India, Website Design India, Custom Web Design India, Web Design Delhi,indian web design company, india seo company,corporate website design,custom website design services,website"/>
-            <meta name="description" content="SIB Infotech being a professional web designing company, offering you a bunch of talented designers to turn your dreams into reality. Good and affordable website design services are the dual keys of success in online business. We offer professional web designing services at affordable rates."/>
-            <meta property="og:title" content="Best Website Designing Development & Digital Marketing SEO Company in Mumbai, India" />
-            <meta property="og:description" content="SIB Infotech is a leading designing and development company in Mumbai, India offers complete end to end web solutions for designing development services that will help to improve user experience." />
-            {/* <link rel="canonical" href="https://www.sibinfotech.com/website-designing-methodology-mumbai-india"/> */}
-        </Head>
+   const metaTags = (
+      <>
+        <title>Title</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+       
+  
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+  
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="/" />
+        <meta property="twitter:title" content="" />
+        <meta property="twitter:description" content="" />
+        <meta property="twitter:image" content="" />
+      </>
+    );
+    return (
+      <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                  <div className="row">
@@ -109,6 +120,6 @@ export default function WebsiteRedevelopmentServices() {
                </div>
             </div>
          </section>
-    </div>
+    </CustomLayout>
   )
 }

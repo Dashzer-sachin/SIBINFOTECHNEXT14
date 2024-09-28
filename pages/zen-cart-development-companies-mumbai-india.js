@@ -1,17 +1,31 @@
-import React from 'react';
 
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function ZenCartDevelopmentCompaniesMumbaiIndia() {
-  return (
-    <div>
-        <Head>
-            <title>Zen Cart Development Services Companies Mumbai India USA UK SIB Infotech</title>
-            <meta name="keywords" content="zen cart development services,zen cart development service,offshore zen cart development,zen cart development companies,zen cart development company,zen cart development india,zen cart development delhi,zen cart development mumbai,zen cart development che"/>
-            <meta name="description" content="SIB Infotech ensures to deliver the best of Zen Cart Ecommerce Development services to its customerâ€™s worldwide. With a team of talented and expert zencart web developers it becomes quite easy on our part to deliver goods as per our clientâ€™s requirement."/>
-        </Head>
+   const metaTags = (
+      <>
+        <title>Title</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+       
+  
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+  
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="/" />
+        <meta property="twitter:title" content="" />
+        <meta property="twitter:description" content="" />
+        <meta property="twitter:image" content="" />
+      </>
+    );
+    return (
+      <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                  <div className="row">
@@ -167,6 +181,6 @@ export default function ZenCartDevelopmentCompaniesMumbaiIndia() {
                </div>
             </div>
          </section>
-    </div>
+    </CustomLayout>
   )
 }

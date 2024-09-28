@@ -1,17 +1,31 @@
-import React from 'react';
 
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function SharepointsDevelopmentCompanyMumbaiIndia() {
+  const metaTags = (
+    <>
+      <title>Title</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+     
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="/" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="/" />
+      <meta property="twitter:title" content="" />
+      <meta property="twitter:description" content="" />
+      <meta property="twitter:image" content="" />
+    </>
+  );
   return (
-    <div>
-        <Head>
-            <title>Sharepoint Application Development Services Companies Usa Sib Infotech</title>
-            <meta name="keywords" content="sharepoint application development services,sharepoint application development service,offshore sharepoint application development,sharepoint application development companies,sharepoint application development company,sharepoint application development i"/>
-            <meta name="description" content="SIB Infotech team uses SharePoint platform services for optimizing collaboration processes and regulating business workflow, so that you can grab tangible business benefits. Our developersâ€™ team has in-depth expertise in the latest RIA (Rich Internet Application) technologies to develop custom SharePoint Applications as per your needs"/>
-        </Head>
+    <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                 <div className="row">
@@ -77,6 +91,6 @@ export default function SharepointsDevelopmentCompanyMumbaiIndia() {
                </div>
             </div>
          </section>
-    </div>
+    </CustomLayout>
   )
 }

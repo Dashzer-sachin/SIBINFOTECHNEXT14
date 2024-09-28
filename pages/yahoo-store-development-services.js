@@ -1,17 +1,30 @@
-import React from 'react';
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function YahooStoreDevelopmentServices() {
+  const metaTags = (
+    <>
+      <title>Title</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+     
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="/" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="/" />
+      <meta property="twitter:title" content="" />
+      <meta property="twitter:description" content="" />
+      <meta property="twitter:image" content="" />
+    </>
+  );
   return (
-    <div>
-        <Head>
-            <title>Yahoo Store Development Services Companies Mumbai India UK SIB Infotech</title>
-            <meta name="keywords" content="yahoo store development services,yahoo store development service,offshore yahoo store development,yahoo store development companies,yahoo store development company,yahoo store development india,yahoo store development delhi,yahoo store development mumbai,"/>
-            <meta name="description" content="SIB Infotech is a professional design and development firm, providing premium Yahoo Store design and development services.The various yahoo store development services we offer are Yahoo Store Design,Redesign Yahoo Store,Yahoo Store Enhancement,Yahoo Store Marketing,RTML Programing,Yahoo Store Guide"/>
-            {/* <link rel="canonical" href="https://www.sibinfotech.com/yahoo-store-development-services"/> */}
-        </Head>
+    <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                  <div className="row">
@@ -118,6 +131,6 @@ export default function YahooStoreDevelopmentServices() {
               </div>
             </div>
          </section>
-    </div>
+    </CustomLayout>
   )
 }

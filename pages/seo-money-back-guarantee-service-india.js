@@ -1,17 +1,31 @@
-import Link from 'next/link';
-import React from 'react';
 import BannerForm from '@/comps/BannerForm';
-import Head from 'next/head';
+import { CustomLayout } from '@/comps/CustomLayout';
+import Link from 'next/link';
 
 
 export default function SeoMoneyBackGuranteerServicesIndia() {
-  return (
-        <div>
-           <Head>
-                <title>Money Back Guarantee</title>
-                <meta name="keywords" content="hire dedicated seo,hire dedicated seo expert,hire dedicated seo professional,hire dedicated seo professionals,hire seo expert,hire seo professional,hire seo experts,seo link building,seo company delhi,seo company mumbai,seo company chennai,seo company hyd"/>
-                <meta name="description" content="SIB Infotech has in their collection specialist of different SEO specific areas like SEO Expert,Link Building Specialists,PPC Management Expert,SEO Content Writers etc."/>
-            </Head>
+    const metaTags = (
+        <>
+          <title>Title</title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+         
+    
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="/" />
+          <meta property="og:title" content="" />
+          <meta property="og:description" content="" />
+          <meta property="og:image" content="" />
+    
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="/" />
+          <meta property="twitter:title" content="" />
+          <meta property="twitter:description" content="" />
+          <meta property="twitter:image" content="" />
+        </>
+      );
+      return (
+        <CustomLayout meta={metaTags}>
             <div className="innerWebDesign">
                 <div className="container-fluid">
                     <div className="row">
@@ -120,6 +134,6 @@ export default function SeoMoneyBackGuranteerServicesIndia() {
                 </div>
             </div>
             </section>
-        </div>
+        </CustomLayout>
   )
 }

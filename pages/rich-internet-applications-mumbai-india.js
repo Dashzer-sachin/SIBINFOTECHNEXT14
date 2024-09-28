@@ -2,15 +2,31 @@ import React from 'react';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
 import Head from 'next/head';
+import { CustomLayout } from '@/comps/CustomLayout';
 
 export default function RichInternetApplicationServices() {
-  return (
-    <div>
-        <Head>
-            <title>Rich Internet Applications Development Services companies India SIB Infotech</title>
-            <meta name="keywords" content="rich internet applications development services india,rich internet applications development services bangalore,rich internet applications development services mumbai,rich internet applications development services delhi,rich internet applications develop"/>
-            <meta name="description" content="We at SIB Infotech use Rich Internet Applications in some extraordinary ways to offer global outstanding web applications to organizations worldwide. We Provide Rich Internet Application Development Services Using Ajax, Ruby on Rails and Flex"/>
-        </Head>
+    const metaTags = (
+        <>
+          <title>Title</title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+         
+    
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="/" />
+          <meta property="og:title" content="" />
+          <meta property="og:description" content="" />
+          <meta property="og:image" content="" />
+    
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="/" />
+          <meta property="twitter:title" content="" />
+          <meta property="twitter:description" content="" />
+          <meta property="twitter:image" content="" />
+        </>
+      );
+      return (
+        <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                 <div className="row">
@@ -157,6 +173,6 @@ export default function RichInternetApplicationServices() {
                 </div>
              </div>
         </section>
-    </div>
+    </CustomLayout>
   )
 }

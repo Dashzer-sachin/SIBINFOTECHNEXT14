@@ -3,15 +3,31 @@ import React from 'react';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
 import Head from 'next/head';
+import { CustomLayout } from '@/comps/CustomLayout';
 
 export default function ProfessionalWebsiteDesigningServices() {
-  return (
-    <div>
-        <Head>
-            <title>Professional Website Designing Services Companies Mumbai India SIB Infotech</title>
-            <meta name="keywords" content="professional web designing,professional website designing,professional web designing services,professional website designing services,professional web designing companies,professional website designing companies,professional web designing india,profession"/>
-            <meta name="description" content="Quality Web site Designing India, Professional web designers company Mumbai, Affordable web site, Superb designs with amazing concepts and rich graphics."/>
-        </Head>
+    const metaTags = (
+        <>
+          <title>Title</title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+         
+    
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="/" />
+          <meta property="og:title" content="" />
+          <meta property="og:description" content="" />
+          <meta property="og:image" content="" />
+    
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="/" />
+          <meta property="twitter:title" content="" />
+          <meta property="twitter:description" content="" />
+          <meta property="twitter:image" content="" />
+        </>
+      );
+      return (
+        <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                  <div className="row">
@@ -71,6 +87,6 @@ export default function ProfessionalWebsiteDesigningServices() {
                 </div>
             </div>
             </section>
-    </div>
+    </CustomLayout>
   )
 }

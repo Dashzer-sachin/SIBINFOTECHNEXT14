@@ -2,15 +2,31 @@ import React from 'react';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
 import Head from 'next/head';
+import { CustomLayout } from '@/comps/CustomLayout';
 
 export default function RecruitmentWebsiteDevelopmentServices() {
+  const metaTags = (
+    <>
+      <title>Title</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+     
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="/" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="/" />
+      <meta property="twitter:title" content="" />
+      <meta property="twitter:description" content="" />
+      <meta property="twitter:image" content="" />
+    </>
+  );
   return (
-    <div>
-        <Head>
-            <title>Recruitment Website Development Services Companies Mumbai SIB Infotech</title>
-            <meta name="keywords" content="recruitment website developer india,recruitment website developer mumbai,recruitment website developer delhi,recruitment website developer pune,recruitment website developer hyderabad,recruitment website developer bangalore,recruitment website developer c"/>
-            <meta name="description" content="SIB Infotech is a recruitment website design company that you can trust. We are proud to serve an international client base with custom recruitment website design and marketing solutions that set the industry standard. We are proud to offer professional recruitment website designing solutions which offer incredible styles, features, and community options."/>
-        </Head>
+    <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                 <div className="row">
@@ -194,6 +210,6 @@ export default function RecruitmentWebsiteDevelopmentServices() {
           </div>
           </div>
         </section>
-    </div>
+    </CustomLayout>
   )
 }

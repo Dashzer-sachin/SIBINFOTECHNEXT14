@@ -1,16 +1,30 @@
-import React from 'react';
+import { CustomLayout } from '@/comps/CustomLayout';
 import Link from 'next/link';
 import BannerForm from '../comps/BannerForm';
-import Head from 'next/head';
 
 export default function XCartDevelopmentCompaniesMumbaiIndia() {
+  const metaTags = (
+    <>
+      <title>Title</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+     
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="/" />
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="/" />
+      <meta property="twitter:title" content="" />
+      <meta property="twitter:description" content="" />
+      <meta property="twitter:image" content="" />
+    </>
+  );
   return (
-    <div>
-        <Head>
-            <title>X-Cart Development Services Companies Mumbai India USA UK SIB Infotech</title>
-            <meta name="keywords" content="x-cart development services,x-cart development service,offshore x-cart development,x-cart development companies,x-cart development company,x-cart development india,x-cart development delhi,x-cart development mumbai,x-cart development chennai,x-cart develo"/>
-            <meta name="description" content="SIB Infotech specializes in X-Cart development and design, X-Cart integration, module development and customization.We have developed an array of X-Cart solutions for its clients. Often these accommodate within the 'LAMP' platform - PHP, MySQL, Apache and Linux."/>
-        </Head>
+    <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                  <div className="row">
@@ -209,6 +223,6 @@ export default function XCartDevelopmentCompaniesMumbaiIndia() {
                 </div>
             </div>
          </section>
-    </div>
+    </CustomLayout>
   )
 }

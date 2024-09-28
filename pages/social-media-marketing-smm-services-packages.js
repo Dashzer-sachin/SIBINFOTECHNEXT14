@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
 import BannerForm from '@/comps/BannerForm';
-import Head from 'next/head';
+import { CustomLayout } from '@/comps/CustomLayout';
+import Link from 'next/link';
+import { useState } from 'react';
 
 
 export default function SocialMediaMarketingSMMServicesPackages() {
@@ -11,13 +11,28 @@ export default function SocialMediaMarketingSMMServicesPackages() {
       setOpen(e)
    }
 
-  return (
-    <div>
-        <Head>
-            <title>Social Media Marketing Package </title>
-            <meta name="keywords" content="Social Media Marketing Package "/>
-            <meta name="description" content="Social Media Marketing Package "/>
-        </Head>
+   const metaTags = (
+      <>
+        <title>Title</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+       
+  
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+  
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="/" />
+        <meta property="twitter:title" content="" />
+        <meta property="twitter:description" content="" />
+        <meta property="twitter:image" content="" />
+      </>
+    );
+    return (
+      <CustomLayout meta={metaTags}>
         <div className="innerWebDesign">
             <div className="container-fluid">
                 <div className="row">
@@ -1503,6 +1518,6 @@ export default function SocialMediaMarketingSMMServicesPackages() {
             </div>
           </div>
          </section>
-    </div>
+    </CustomLayout>
   )
 }
